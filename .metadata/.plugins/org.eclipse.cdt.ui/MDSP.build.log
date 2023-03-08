@@ -1,0 +1,10 @@
+15:03:49 **** Incremental Build of configuration Debug for project MDSP ****
+make -j4 all 
+arm-none-eabi-size   MDSP.elf 
+   text	   data	    bss	    dec	    hex	filename
+  45072	   2744	  12056	  59872	   e9e0	MDSP.elf
+Finished building: default.size.stdout
+ 
+
+15:03:50 Build Finished. 0 errors, 0 warnings. (took 1s.129ms)
+

@@ -1,0 +1,13 @@
+/*
+ * wind_mppt.h
+ *
+ *  Created on: Mar 8, 2023
+ *      Author: Thanh Tung
+ */
+
+#ifndef SRC_WIND_MPPT_H_
+#define SRC_WIND_MPPT_H_
+
+
+
+#endif /* SRC_WIND_MPPT_H_ */

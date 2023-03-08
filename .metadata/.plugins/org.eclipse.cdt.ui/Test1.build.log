@@ -1,0 +1,28 @@
+14:48:49 **** Incremental Build of configuration Debug for project Test1 ****
+make -j4 all 
+arm-none-eabi-gcc "../app/src/wind_mppt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I"C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc" -I"C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include" -I"C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/src/wind_mppt.d" -MT"app/src/wind_mppt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "app/src/wind_mppt.o"
+arm-none-eabi-gcc "C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I"C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc" -I"C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include" -I"C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/stm32g4xx_hal_gpio.d" -MT"Drivers/STM32G4xx_HAL_Driver/stm32g4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/stm32g4xx_hal_gpio.o"
+arm-none-eabi-gcc "C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I"C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc" -I"C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include" -I"C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/stm32g4xx_hal_pwr.d" -MT"Drivers/STM32G4xx_HAL_Driver/stm32g4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/stm32g4xx_hal_pwr.o"
+arm-none-eabi-gcc "C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I"C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc" -I"C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include" -I"C:/Users/Thanh Tung/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/stm32g4xx_hal_pwr_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/stm32g4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/stm32g4xx_hal_pwr_ex.o"
+In file included from ../app/src/wind_mppt.c:8:
+../app/src/wind_mppt.h:35:2: error: unknown type name 'uint16_t'
+   35 |  uint16_t mppt_enable;
+      |  ^~~~~~~~
+../app/src/wind_mppt.h:36:2: error: unknown type name 'uint16_t'
+   36 |  uint16_t mppt_first;
+      |  ^~~~~~~~
+../app/src/wind_mppt.c:36:1: error: unknown type name 'uint32_t'; did you mean 'wint_t'?
+   36 | uint32_t count = 0;
+      | ^~~~~~~~
+      | wint_t
+../app/src/wind_mppt.c: In function 'WindMPPTProcess':
+../app/src/wind_mppt.c:50:7: error: 'Delta_V' undeclared (first use in this function)
+   50 |    if(Delta_V > 0){
+      |       ^~~~~~~
+../app/src/wind_mppt.c:50:7: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [app/src/subdir.mk:19: app/src/wind_mppt.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+14:48:50 Build Failed. 6 errors, 0 warnings. (took 1s.50ms)
+
