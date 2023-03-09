@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="StepSize"/>
+		<item key="selection" value="gpio_port_t"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="gpio_port_t"/>
+			<item value="EXTI15_10_IRQHandler_Config"/>
 			<item value="Stepsize"/>
 		</list>
 		<list key="replacehistory">

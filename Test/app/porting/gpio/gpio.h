@@ -42,10 +42,10 @@ typedef enum gpio_port_id{
 	PORT_MAX
 }gpio_port_id;
 
-typedef enum gpio_level{
+typedef enum gpio_state{
 	GPIO_LOW = 0,
 	GPIO_HIGH
-}gpio_level;
+}gpio_state;
 
 #define PULL_UP   	GPIO_PULLUP
 #define PULL_DOWN 	GPIO_PULLDOWN
@@ -65,6 +65,10 @@ typedef struct gpio_port
 extern uint32_t pin_isr;
 
 void GPIO_SetPinOut(gpio_port_id port_id, gpio_pin_id pin_id);
-void GPIOSetPinIn(gpio_port_id port_id);
+void GPIOSetPinIn(gpio_port_id port_id, gpio_pin_id pin_id, uint32_t PULLUPDOWN);
+void GPIO_WritePin(gpio_port_id port_id, gpio_pin_id pin_id, gpio_state state);
+gpio_state GPIO_ReadPin(gpio_port_id port_id, gpio_pin_id pin_id);
+void EXTI15_10_IRQHandler_Config(gpio_port_id port_id, gpio_pin_id pin_id, uint32_t mode, uint32_t PULLUPDOWN);
+
 
 #endif /* PORTING_GPIO_GPIO_H_ */
