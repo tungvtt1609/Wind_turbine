@@ -46,20 +46,9 @@ void GPIO_SetPinOut(gpio_port_id port_id, gpio_pin_id pin_id){
                            	   	   	   	   	   	   	   This parameter can be any value of @ref GPIO_pins */
 	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH; /*!< Specifies the speed for the selected pins.
                            	   	   	   	   	   	   	   This parameter can be a value of @ref GPIO_speed */
-	HAL_GPIO_Init(s_gpio_port[port_id].port, &GPIO_InitStruct);
-	return;
 }
 
-void GPIO_SetPinIn(gpio_port_id port_id, gpio_pin_id pin_id, uint32_t PULLUPDOWN){
-	GPIO_InitTypeDef  GPIO_InitStruct;
-	GPIO_InitStruct.Mode  = GPIO_MODE_INPUT;      	/*!< Input Floating Mode                   	*/
-	GPIO_InitStruct.Pull  = PULLUPDOWN;				/*!< Input state pull-up or pull-down		*/
-	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;	/*!< Specifies the speed for the selected pins.
-                           	   	   	   	   	   	   	   This parameter can be a value of @ref GPIO_speed */
-	GPIO_InitStruct.Pin = s_gpio_pin[pin_id].pin;
-	HAL_GPIO_Init(s_gpio_port[port_id].port, &GPIO_InitStruct);
-	return;
-}
+void GPIO_SetPinIn(){}
 
 void GPIO_WritePin(gpio_port_id port_id, gpio_pin_id pin_id, gpio_state state){
 	HAL_GPIO_WritePin(s_gpio_port[port_id].port, s_gpio_pin[pin_id].pin, state);
